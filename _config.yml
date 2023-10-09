@@ -41,5 +41,3 @@ defaults:
     values:
       tags: Other
 
-url: 'https://vicLeva.github.io/' # your main domain
-baseurl: 'vicLeva/' # if you're using custom domain keep this blank example: baseurl: ''
