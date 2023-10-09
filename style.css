@@ -5,8 +5,9 @@ body, h1, h2, p, ul, li, a {
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
 }
 
 header {
@@ -17,7 +18,9 @@ header {
 }
 
 header h1 {
+    font-family: "Pacifico", cursive;
     font-size: 36px;
+    margin-bottom: 10px;
 }
 
 nav ul {
@@ -30,10 +33,9 @@ nav ul li {
 }
 
 nav a {
-    color: #fff;
+    color: #0077cc;
     text-decoration: none;
-    font-weight: bold; /* Met en gras les liens du menu */
-    font-size: 18px; /* Taille de police légèrement plus grande pour les liens du menu */
+    font-weight: bold;
 }
 
 main {
@@ -41,23 +43,26 @@ main {
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    line-height: 1.6; /* Espacement entre les lignes légèrement augmenté */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
 }
 
 h2 {
-    font-size: 24px;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 28px;
     margin-bottom: 20px;
-    color: #333; /* Couleur de texte légèrement plus sombre pour les titres */
+    color: #333;
 }
 
 p {
     margin-bottom: 10px;
-    color: #666; /* Couleur de texte plus sombre pour le contenu principal */
+    font-size: 16px;
+    color: #666;
 }
 
 ul {
-    list-style-type: none;
+    list-style-type: disc;
+    margin-left: 20px;
 }
 
 li {
@@ -65,8 +70,9 @@ li {
 }
 
 a {
-    color: #0077cc; /* Couleur de lien personnalisée */
-    text-decoration: underline; /* Souligner les liens au survol */
+    color: #0077cc;
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 footer {
