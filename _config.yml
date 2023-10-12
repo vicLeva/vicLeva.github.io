@@ -4,7 +4,7 @@ description: "Bibliographie doctorat." # This will show up in places like twitte
 
 # Email / Social media user names used by the minima theme:
 # All of these are optional and can be removed or commented out
-email: "victor.levallois@inria.fr"
+email: "firstname.lastname@inria.fr"
 #twitter_username: "twitteruser"
 github_username: "vicLeva"
 linkedin_username: "Victor Levallois"
