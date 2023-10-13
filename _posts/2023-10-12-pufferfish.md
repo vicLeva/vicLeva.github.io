@@ -8,9 +8,27 @@ Jason Fan, Jamshed Khan, Giulio Ermanno Pibiri & Rob Patro
 ### Résumé
 
 #### En 2 lignes
-
+alignement et non pseudoalignement, on cherche la position
 
 #### Préliminaires
+S'inscrit dans "reference guided analysis" -> known references contrairement au *de novo*\
+Sert pour assemblage guidé de génome, variant calling, idendification de variants structuraux (=/= SNPs & indels), dans ces cas il est usuel de trouver une séquence seed dans le génome avant d'analyser la partie du génome en question. -> trouver kmer dans génome (w/ position)
+
+SPT : interface en amont des indexers. vient créer un couche d'abstraction entre les kmers et leurs positions dans la collec de références. Il faut ensuite map kmer -> tile et tile -> position. (rapport avec les super-kmers ?)
+
+full-text indexes (BWT) : space vs hashing methods (dBG) : exact query time
+
+MRP query : la mapped reference query d'un kmer x retourne une liste de (ref, pos) indiquant pour chaque reference où trouver le kmer x
+
+1 SPT = (U, T, S, W, L)
+  + Ui = tiles, c'est un SPSS (chaque kmer du dataset sera présent dans un Ui)
+  + Tn fait correspondre tile et ref n (Rn)n chaque Tn,m = 1 Ui dans U
+  + L : séquences de longueur Ln = {Ln,1 ... Ln,m}
+  + W : offsets, int sequences Wn = {Wn,1 ... Wn,m}
+  + S : start pos, int sequences Sn = {Sn,1 ... Sn,m}
+--> Chaque séquence Rn doit pouvoir être reconstruit en gluant des substrings de tiles aux offsets Wn avec des longueurs Ln
+
+![figure1](/assets/pufferfish1.png)
 
 
 #### Méthodes
