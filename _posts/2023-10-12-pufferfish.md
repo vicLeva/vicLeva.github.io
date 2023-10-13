@@ -20,6 +20,9 @@ full-text indexes (BWT) : space vs hashing methods (dBG) : exact query time
 
 MRP query : la mapped reference query d'un kmer x retourne une liste de (ref, pos) indiquant pour chaque reference où trouver le kmer x
 
+
+#### Méthodes
+
 1 SPT = (U, T, S, W, L)
   + Ui = tiles, c'est un SPSS (chaque kmer du dataset sera présent dans un Ui)
   + Tn fait correspondre tile et ref n (Rn)n chaque Tn,m = 1 Ui dans U
@@ -30,9 +33,8 @@ MRP query : la mapped reference query d'un kmer x retourne une liste de (ref, po
 
 ![figure1](/assets/pufferfish1.png)
 
-
-#### Méthodes
-
+1 small SPSS : compacte l'info de présence d'un k-mer\
+1 small SPT : compacte l'info de la position d'un k-mer
 
 
 #### Résultats
