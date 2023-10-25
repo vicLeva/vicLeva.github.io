@@ -8,7 +8,7 @@ Jason Fan, Jamshed Khan, Giulio Ermanno Pibiri & Rob Patro
 ### Résumé
 
 #### En 2 lignes
-alignement et non pseudoalignement, on cherche la position
+alignement et non pseudoalignement, on cherche la position. Usage d'une nouvelle structure similaire au SPSS : le SPT (spectrum preserving tiling) (kmer -> tile) & (tile -> occurence (ref+pos)) 
 
 #### Préliminaires
 S'inscrit dans "reference guided analysis" -> known references contrairement au *de novo*\
